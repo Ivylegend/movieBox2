@@ -1,0 +1,81 @@
+.app__header {
+  background-image: url(../src/assets/images/Poster.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.app__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 5rem;
+  max-width: 100%;
+}
+
+.navbar__search {
+  max-width: 500px;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.navbar__search input {
+  border: none;
+  background-color: transparent;
+  width: 400px;
+  outline: none;
+  color: white;
+}
+
+.navbar__search input::placeholder {
+  color: white;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.app__featured{
+    padding: 5rem;
+    background-color: white;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 35px;
+}
+
+@media screen and (max-width: 769px) {
+  .app__navbar {
+    padding: 0 2rem;
+  }
+
+  .app__navbar .logo {
+    width: 130px;
+  }
+
+  .navbar__search {
+    max-width: 200px;
+  }
+
+  .signin {
+    display: none;
+  }
+
+  .app__header {
+    background-size: cover;
+    background-position: center;
+  }
+}

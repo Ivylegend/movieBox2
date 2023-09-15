@@ -1,0 +1,60 @@
+.app__moviecard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 250px;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.like {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: gray;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.like svg {
+  z-index: 200;
+}
+
+.app__moviecard:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.app__moviecard .backdrop {
+  height: 370px;
+  transition: transform 0.3s ease-in;
+}
+
+.app__moviecard .backdrop:hover {
+  transform: scale(1.2);
+}
+
+.location {
+  font-size: 12px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.genre {
+  font-size: 12px;
+}
+
+.movie-title {
+  font-weight: 700;
+}

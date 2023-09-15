@@ -1,0 +1,17 @@
+.app__ratings{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+}
+
+.rating svg{
+    color: yellow;
+    font-size: 2rem;
+}

@@ -1,0 +1,56 @@
+.app__hero{
+    width: 404px;
+    padding: 5rem 0rem 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.app__hero h1{
+    font-size: 3rem;
+    color: white;
+}
+
+.app__hero p{
+    color: white;
+    font-size: 14px;
+}
+
+.app__hero button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BE123C;
+    color: white;
+    width: 169px;
+    height: 36px;
+    border-radius: 6px;
+    gap: 8px;
+    padding: 6px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero__ratings{
+    display: flex;
+    gap: 3rem;
+}
+
+.herorating{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.percent{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.herorating svg{
+    color: yellow;
+    font-size: 2rem;
+}

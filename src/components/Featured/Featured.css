@@ -1,0 +1,19 @@
+.featured__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.featured__header h2{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.see-more{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    color: #BE123C;
+}

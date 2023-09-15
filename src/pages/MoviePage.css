@@ -1,0 +1,62 @@
+.app__product {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  scroll-behavior: smooth;
+}
+
+.main__section {
+  margin-left: 215px;
+  padding: 1rem 3rem;
+}
+
+.main__img {
+  width: 100%;
+  height: 449px;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.main__img img {
+  width: 980px;
+  object-fit: cover;
+  border-radius: 20px;
+  max-height: 449px;
+}
+
+.overview {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.overview-text {
+  width: 70%;
+}
+
+.overview-text span {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.widebtn {
+  background-color: #be123c;
+  /* height: 35px; */
+  width: 300px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.widebtn:hover {
+  background-color: #8a0428;
+}

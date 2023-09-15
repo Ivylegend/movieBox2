@@ -1,0 +1,23 @@
+.app__socials{
+    display: flex;
+    gap: 48px;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.app__socials .facebook:hover{
+    color: blue;
+}
+
+.app__socials .twitter:hover{
+    color: rgb(54, 136, 190);
+}
+
+.app__socials .insta:hover{
+    color: rgb(185, 7, 185);
+}
+
+.app__socials .youtube:hover{
+    color: rgb(247, 10, 10);
+}
