@@ -15,7 +15,7 @@ function Home() {
   const [loading, setLoading] = useState(true);
 
   const apiKey = "aefb9c790f6654cb8dddcf8785a7cb66";
-  const apiUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`;
+  const apiUrl = `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=en-US&page=1`;
   const apiSearch =
     "https://api.themoviedb.org/3/search/movie?api_key=aefb9c790f6654cb8dddcf8785a7cb66&query=";
 
