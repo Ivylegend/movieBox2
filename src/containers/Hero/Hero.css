@@ -54,3 +54,10 @@
     color: yellow;
     font-size: 2rem;
 }
+
+@media screen and (max-width: 769px) {
+    .app__hero{
+        align-items: flex-start;
+        padding: 3rem 2rem;
+    }
+}

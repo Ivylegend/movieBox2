@@ -58,16 +58,30 @@
 }
 
 @media screen and (max-width: 769px) {
+  body{
+    background-color: black;
+  }
+
   .app__navbar {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   .app__navbar .logo {
-    width: 130px;
+    width: 150px;
   }
 
-  .navbar__search {
-    max-width: 200px;
+  .navbar__search{
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    max-width: 300px;
+  }
+
+  .navbar__search form{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    font-size: 14px;
   }
 
   .signin {
@@ -77,5 +91,15 @@
   .app__header {
     background-size: cover;
     background-position: center;
+  }
+
+  .app__featured{
+    padding: 2rem;
+  }
+  
+  .movies{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }

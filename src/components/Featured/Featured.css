@@ -17,3 +17,13 @@
     cursor: pointer;
     color: #BE123C;
 }
+
+@media screen and (max-width: 769px) {
+    .featured__header h2{
+        font-size: 1.8rem;
+    }
+
+    .see-more{
+        font-size: 14px;
+    }
+}

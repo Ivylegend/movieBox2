@@ -28,3 +28,22 @@
   color: #6b7280;
   font-size: 18px;
 }
+
+@media screen and (max-width: 769px) {
+  .app__footer{
+    padding: 3rem 2rem;
+  }
+
+  .footer__copyright{
+    font-size: 12px;
+  }
+
+  .footer__links{
+    gap: 25px;
+  }
+
+  .footer__links a{
+    font-size: 13px;
+    text-align: center;
+  }
+}

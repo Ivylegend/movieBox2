@@ -38,6 +38,16 @@ function Home() {
     setTerm("");
   };
 
+  const seeMore = () => {
+    fetch(apiUrl)
+      .then((res) => res.json())
+      .then((data) => setMovies(data.results.slice(0, 25)))
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+        setLoading(false);
+      });
+  };
+
   if (!loading) {
     return <p>Loading...</p>;
   }
@@ -65,7 +75,7 @@ function Home() {
             </form>
           </div>
           <div className="navbar__menu">
-            <Link style={{textDecoration:"none", color:"white"}}>
+            <Link style={{ textDecoration: "none", color: "white" }}>
               {" "}
               <p className="signin">Sign In</p>
             </Link>
@@ -77,7 +87,7 @@ function Home() {
       </div>
 
       <div className="app__featured">
-        <Featured />
+        <Featured event={seeMore} />
         <div className="movies">
           {movies.map((movie, id) => {
             return <MovieCard {...movie} />;
