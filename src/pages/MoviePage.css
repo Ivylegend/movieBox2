@@ -1,12 +1,12 @@
 .app__product {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
   scroll-behavior: smooth;
+  gap: 215px;
+  flex-direction: row;
 }
 
 .main__section {
-  margin-left: 215px;
   padding: 1rem 3rem;
 }
 
@@ -18,7 +18,8 @@
 }
 
 .main__img img {
-  width: 980px;
+  /* width: 980px; */
+  width: 100%;
   object-fit: cover;
   border-radius: 20px;
   max-height: 449px;
@@ -59,4 +60,97 @@
 
 .widebtn:hover {
   background-color: #8a0428;
+}
+
+.movie-line1 {
+  font-size: 23px;
+}
+
+.title-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-inner-div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.last{
+  width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .app__product {
+    gap: 0;
+    background-color: white;
+    padding: 0;
+    display: block;
+  }
+
+  .main__section {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .main__img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 0;
+  }
+
+  .main__img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
+  }
+
+  .overview {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .overview-text {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .backdrop__overlay {
+    display: none;
+  }
+
+  .title-div {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .title-inner-div {
+    margin: 0;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+  }
+
+  .widebtn{
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .last{
+    width: 100%;
+  }
 }

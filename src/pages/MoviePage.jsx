@@ -30,7 +30,9 @@ const Product = () => {
 
   return (
     <div className="app__product">
-      <SideNav />
+      <div>
+        <SideNav />
+      </div>
       <div className="main__section">
         <div className="main__img">
           <img
@@ -53,23 +55,16 @@ const Product = () => {
           />
         </div>
 
-        <div style={{display:"flex", justifyContent:"space-between", alignItems:"center"}}>
-          <div
-            style={{
-              display: "flex",
-              gap: "20px",
-              alignItems: "center",
-              marginBottom: "1rem",
-            }}
-          >
-            <h4 style={{ fontSize: "23px" }} data-testid="movie-title">
+        <div className="title-div">
+          <div className="title-inner-div">
+            <h4 className="movie-line1" data-testid="movie-title">
               {movies.title}
             </h4>
-            .<p data-testid="movie-release-date">{movies.release_date}</p>
-            .<p data-testid="movie-runtime">{movies.runtime}s</p>
+            <p data-testid="movie-release-date">{movies.release_date}</p>
+            <p data-testid="movie-runtime">{movies.runtime}s</p>
           </div>
           <div className="rate">
-            <img style={{height:"30px"}} src={Rating} alt="star" />
+            <img style={{ height: "30px" }} src={Rating} alt="star" />
           </div>
         </div>
 
@@ -102,7 +97,7 @@ const Product = () => {
               </button>
             </div>
           </div>
-          <div style={{ width: "30%" }}>
+          <div className="last">
             <span
               style={{ display: "flex", flexDirection: "column", gap: ".5rem" }}
             >

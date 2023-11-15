@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
+  height: 100vh;
 }
 
 .app__navbar {
@@ -54,12 +55,16 @@
 .movies {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 35px;
+  grid-gap: 25px;
 }
 
 @media screen and (max-width: 769px) {
   body{
     background-color: black;
+  }
+
+  .app{
+    overflow: hidden;
   }
 
   .app__navbar {
@@ -91,6 +96,7 @@
   .app__header {
     background-size: cover;
     background-position: center;
+    height: 80vh;
   }
 
   .app__featured{
@@ -98,8 +104,9 @@
   }
   
   .movies{
+    grid-gap: 15px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    /* overflow: hidden; */
+    overflow-x: scroll;
   }
 }

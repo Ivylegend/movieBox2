@@ -58,3 +58,27 @@
 .movie-title {
   font-weight: 700;
 }
+
+@media screen and (max-width: 769px) {
+  .app__moviecard{
+    width: 200px;
+    height: 150px;
+    gap: 10px;
+    overflow: unset;
+  }
+
+  .app__moviecard .backdrop{
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .like{
+    display: none;
+  }
+
+  .location, .genre{
+    display: none;
+  }
+}

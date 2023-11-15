@@ -27,3 +27,13 @@
         font-size: 14px;
     }
 }
+
+@media screen and (max-width: 429px) {
+    .featured__header h2{
+        font-size: 1.1rem;
+    }
+
+    .see-more{
+        font-size: 14px;
+    }
+}
